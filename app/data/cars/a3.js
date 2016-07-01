@@ -151,19 +151,20 @@ export default {
       "data": [{
         "locations": ["California", "Mountain", "Pacific NW", "Central", "Desert SW", "Eastern", "Midwest", "New England", "SE", "SW"],
         "value": {"buyback": 34045, "modification": 8163}
-      }, {
-        "name": "Sedan 4D TDI Premium Plus 2WD I4 Turbo",
-        "data": [{
-          "locations": ["California", "Mountain", "Pacific NW", "Central", "Desert SW", "Eastern", "Midwest", "New England", "SE", "SW"],
-          "value": {"buyback": 37778, "modification": 8785}
-        }]
-      }, {
-        "name": "Sedan 4D TDI Prestige 2WD I4 Turbo",
-        "data": [{
-          "locations": ["California", "Mountain", "Pacific NW", "Central", "Desert SW", "Eastern", "Midwest", "New England", "SE", "SW"],
-          "value": {"buyback": 40543, "modification": 9246}
-        }]
-      }]}],
+      }]
+    }, {
+      "name": "Sedan 4D TDI Premium Plus 2WD I4 Turbo",
+      "data": [{
+        "locations": ["California", "Mountain", "Pacific NW", "Central", "Desert SW", "Eastern", "Midwest", "New England", "SE", "SW"],
+        "value": {"buyback": 37778, "modification": 8785}
+      }]
+    }, {
+      "name": "Sedan 4D TDI Prestige 2WD I4 Turbo",
+      "data": [{
+        "locations": ["California", "Mountain", "Pacific NW", "Central", "Desert SW", "Eastern", "Midwest", "New England", "SE", "SW"],
+        "value": {"buyback": 40543, "modification": 9246}
+      }]
+    }],
     "options": [{
       "name": "Bang & Olufsen Stereo  (Premium Plus Only)",
       "value": {"buyback": 510, "modification": 85}
@@ -177,4 +178,6 @@ export default {
       "name": "Driver Assist Pkg.  (Premium, Premium Plus Only)",
       "value": {"buyback": 1080, "modification": 180}
     }, {"name": "Advanced Technology Pkg.  (Prestige Only)", "value": {"buyback": 1080, "modification": 180}}]
-  }]}
+  }
+  ]
+}
