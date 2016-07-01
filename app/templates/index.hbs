@@ -1,0 +1,148 @@
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead"></p>
+      {{#bs-form formLayout="horizontal"}}
+
+
+        {{#bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="State"
+        }}
+          {{#power-select
+          selected=region
+          options=regions
+          searchField="state"
+          onchange=(action 'setRegion')
+          as |obj|
+          }}
+            {{obj.state}}
+          {{/power-select}}
+        {{/bs-form-element}}
+
+        {{#bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Model"
+        }}
+          {{#power-select
+          selected=car
+          options=list
+          searchField="model"
+          onchange=(action 'setCar')
+          as |obj|
+          }}
+            {{obj.model}}
+          {{/power-select}}
+        {{/bs-form-element}}
+
+        {{#bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Year"
+        }}
+          {{#power-select
+          selected=year
+          searchField="year"
+          options=car.years
+          onchange=(action 'setYear')
+          as |obj|
+          }}
+            {{obj.year}}
+          {{/power-select}}
+        {{/bs-form-element}}
+
+        {{#bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Trim"
+        }}
+          {{#power-select
+          searchField="name"
+          selected=trim
+          options=year.trims
+          onchange=(action 'setTrim')
+          as |obj|
+          }}
+            {{obj.name}}
+          {{/power-select}}
+        {{/bs-form-element}}
+
+        {{#bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Options"
+        }}
+          {{#power-select-multiple
+          options=options
+          selected=selectedOptions
+          searchField="name"
+          onchange=(action (mut selectedOptions))
+          as |obj|
+          }}
+            {{obj.name}}
+          {{/power-select-multiple}}
+        {{/bs-form-element}}
+
+        {{bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Current Mileage"
+        value=mileage
+        }}
+
+        {{bs-form-element
+        horizontalLabelGridClass='col-md-2'
+        label="Months since Sep 2015"
+        value=months
+        }}
+
+      {{/bs-form}}
+    </div>
+</div>
+
+
+<div class="col-xs-12 col-md-6 col-md-offset-3 well">
+    <div class="row">
+        <div class="col-md-2 col-xs-4 col-xs-offset-4">
+            <h5>Buyback</h5>
+        </div>
+        <div class="col-md-2 col-xs-4">
+            <h5>Modification</h5>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-4">
+            <p>Car</p>
+            <p>Options</p>
+            <p>Mileage</p>
+            <p>Adjustment</p>
+            <p>Total:</p>
+
+        </div>
+
+        <div class="col-md-2 col-xs-4 text-right">
+            <p>${{format-number trimValue.buyback precision=0}}</p>
+            <p>${{format-number optionsValue.buyback precision=0}}</p>
+            <p>${{format-number mileageAdjustment.buyback precision=0}}</p>
+            <p>${{format-number adjustment precision=0}}</p>
+            <p style="border-top:black solid 1px">${{format-number adjustedTotal.buyback precision=0}}</p>
+
+        </div>
+        <div class="col-md-2 col-xs-4 text-right">
+            <p>${{format-number trimValue.modification precision=0}}</p>
+            <p>${{format-number optionsValue.modification precision=0}}</p>
+            <p>${{format-number mileageAdjustment.modification precision=0}}</p>
+            <p>${{format-number adjustment precision=0}}</p>
+            <p style="border-top:black solid 1px">${{format-number adjustedTotal.modification precision=0}}</p>
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>Data should be current as of June 30 2016.
+            The value under buyback is how much you can sell your entire car back to VW for.
+            The value under modification is how much you would get if you keep your car and have VW fix it
+        </p>
+        <p>If you just want the json data it's in <code>window.data</code></p>
+
+
+    </div>
+</div>
+
