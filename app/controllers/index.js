@@ -32,7 +32,7 @@ export default Ember.Controller.extend({
   trim: null,
   selectedOptions: [],
 
-  months: monthDiff(new Date("2015-9"), new Date()) + 1,
+  months: monthDiff(new Date("2015-09"), new Date()),
 
   options: function () {
     let year = this.get('year'),
