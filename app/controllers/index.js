@@ -20,6 +20,14 @@ function monthDiff(d1, d2) {
   return months <= 0 ? 0 : months;
 }
 
+function getNumber(number) {
+
+  if (number) {
+    return parseInt(number.toString().replace(/[,\.]/g, ''))
+  }
+  return null
+}
+
 
 export default Ember.Controller.extend({
   list,
@@ -117,14 +125,14 @@ export default Ember.Controller.extend({
   mileageAdjustment: function () {
     let car = this.get('car'),
       year = this.get('year'),
-      mileage = this.get('mileage'),
-      months = parseInt(this.get('months'))
+      mileage = getNumber(this.get('mileage')),
+      months = getNumber(this.get('months'))
 
-    if (year && car && months && mileage) {
+    if (year && car && months !== null && mileage !== null) {
       let adjustedMileage = mileage - months * 1042
 
       let obj = car.mileage.find(item => {
-        return adjustedMileage > item.from && adjustedMileage < item.to
+        return adjustedMileage >= item.from && adjustedMileage <= item.to
       })
       if (obj) {
         return obj[year.year]
