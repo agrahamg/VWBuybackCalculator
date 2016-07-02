@@ -1,7 +1,11 @@
-# Vw
+# VW TDI Buyback Calculator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple site to simplify the process of figuring out how much money VW will give you in exchange for your TDI.
+This figures out both the buyback value and the value if you decide to get your car fixed. 
+
+[Visit app](https://agrahamg.github.io/VWBuybackCalculator/)
+
+The following are generated instructions for dealing with ember cli apps
 
 ## Prerequisites
 
@@ -39,9 +43,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
