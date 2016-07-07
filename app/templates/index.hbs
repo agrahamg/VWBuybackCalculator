@@ -1,11 +1,11 @@
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-7 col-md-offset-2">
         <p class="lead"></p>
       {{#bs-form formLayout="horizontal"}}
 
 
         {{#bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="State"
         }}
           {{#power-select
@@ -20,7 +20,7 @@
         {{/bs-form-element}}
 
         {{#bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Model"
         }}
           {{#power-select
@@ -35,7 +35,7 @@
         {{/bs-form-element}}
 
         {{#bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Year"
         }}
           {{#power-select
@@ -50,7 +50,7 @@
         {{/bs-form-element}}
 
         {{#bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Trim"
         }}
           {{#power-select
@@ -65,7 +65,7 @@
         {{/bs-form-element}}
 
         {{#bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Options"
         }}
           {{#power-select-multiple
@@ -80,13 +80,13 @@
         {{/bs-form-element}}
 
         {{bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Current Mileage"
         value=mileage
         }}
 
         {{bs-form-element
-        horizontalLabelGridClass='col-md-2'
+        horizontalLabelGridClass='col-md-3'
         label="Months since Sep 2015"
         value=months
         }}
@@ -136,6 +136,21 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
+        <p><strong>Buyback:</strong> Sell your car back to VW.
+            The total amount includes both the September 2015 Clean Trade Vehicle Value, plus a cash payment</p>
+
+        <p><strong>Modification:</strong> Keep your car, get a free modification to reduce emissions plus a cash payment
+        </p>
+
+        <p>The Class Action Settlement Program will accept claims until September 1, 2018. </p>
+
+        <p>For those cars that changed hands after September 18, 2015 and during the claims period,
+            the settlement equitably divides the Owner Restitution payment approximately 50/50 between the owner as of
+            September 18,
+            2015 who later sold the car and the current owner </p>
+
+        <p>Note that if you sell your car after June 28, 2016, you will receive nothing</p>
+
         <div class="alert alert-warning" role="alert">
             <strong>Disclaimer:</strong> I am in no way affiliated with VW.
             This is just a fun project to simplify the pdf documents released around June 28 2016.
@@ -143,11 +158,11 @@
             <a href="https://www.reddit.com/r/tdi/comments/4q9sn2/everything_you_need_to_know_about_buybacks_and/">r/tdi</a>
         </div>
 
-        <p>Data should be current as of June 30 2016.
-            The value under buyback is how much you can sell your entire car back to VW for.
-            The value under modification is how much you would get if you keep your car and have VW fix it
-        </p>
+        <p>Data should be current as of June 30 2016.</p>
+
         <p>If you just want the json data it's in <code>window.data</code></p>
+
+        <p>Find an issue? You can submit it <a href="https://github.com/agrahamg/VWBuybackCalculator/issues">here</a></p>
 
 
     </div>
