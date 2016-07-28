@@ -3,7 +3,8 @@
 Simple site to simplify the process of figuring out how much money VW will give you in exchange for your TDI.
 This figures out both the buyback value and the value if you decide to get your car fixed. 
 
-[Visit app](https://agrahamg.github.io/VWBuybackCalculator/)
+[Visit app](https://agrahamg.github.io/VWBuybackCalculator/) 
+Instamotor also built an updated version that's a bit more user friendly [here] (https://instamotor.com/vw-settlement-calculator)
 
 The following are generated instructions for dealing with ember cli apps
 
