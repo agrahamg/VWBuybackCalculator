@@ -1,19 +1,21 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
+.DS_Store
+node_modules
 /dist
-/tmp
 
-# dependencies
-/node_modules
-/bower_components
+# local env files
+.env.local
+.env.*.local
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-/.idea/*
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
