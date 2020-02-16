@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/VWBuybackCalculator/precache-manifest.b4f90f31d9f66a15df8147024f1526fb.js"
+  "/VWBuybackCalculator/precache-manifest.781f17512d53f00a467a83ef77c4bbd7.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vw-buyback-calculator"});
