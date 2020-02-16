@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <v-toolbar-title>VW Buyback Calculatorr</v-toolbar-title>
+      <v-toolbar-title>VW Buyback Calculator</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
