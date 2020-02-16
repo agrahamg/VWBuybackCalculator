@@ -2,11 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 import VueCompositionApi from '@vue/composition-api';
+import vuetify from './plugins/vuetify';
 
 Vue.use(VueCompositionApi);
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')
