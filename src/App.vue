@@ -8,7 +8,7 @@
       <v-toolbar-title>VW Buyback Calculator</v-toolbar-title>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <v-container>
         <v-row justify="center">
           <v-col md="5">
@@ -17,7 +17,7 @@
               autofocus
               label="State"
               :items="regions"
-              item-value="region"
+              :item-value="obj => obj.regions"
               item-text="state"
             />
 
@@ -143,7 +143,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
